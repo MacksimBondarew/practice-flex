@@ -1,6 +1,7 @@
-.text {
+/* .text {
     padding: 20px;
     margin: 20px;
+    width: 300px;
     border:  1px solid #000;
 }
 
@@ -13,6 +14,30 @@ img {
     margin-bottom: 50px;
     height: 500px;
     display: flex;
-    /* flex-direction: column-reverse; */
-    justify-content: space-around;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+} */
+
+/* lesson 2 */
+
+.box {
+    /* width: 900px; */
+    max-width: 1000px;
+    display: flex;
+    border: 1px solid #000;
+    height: 400px;
+}
+
+.text {
+    border: 1px solid gray;
+}
+
+.text:nth-child(1) {
+    /* flex-grow: 1; */
+}
+.text:nth-child(2) {
+    /* flex-grow: 2; */
+    flex-shrink: 1.5;
 }
